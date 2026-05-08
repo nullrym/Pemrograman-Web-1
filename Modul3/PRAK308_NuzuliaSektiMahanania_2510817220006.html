@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Pendaftaran Kursus</title>
+</head>
+<body>
+
+<form>
+    <table border="2" width="550" align="center" cellspacing="0" cellpadding="0" style="font-family: 'Times New Roman', Times, serif;">
+        
+        <tr bgcolor="#87CEEB">
+            <td align="center" style="padding: 20px; border-bottom: 2px solid white;">
+                <font color="red" size="6" face="Arial"><b>Pendaftaran Kursus</b></font>
+            </td>
+        </tr>
+
+        <tr bgcolor="#808080">
+            <td style="padding: 10px; border-bottom: 2px solid white;">
+                <font size="4"><b>Data Diri</b></font>
+                <br><br>
+                
+                <table border="0" width="100%" cellspacing="0" cellpadding="3">
+                    <tr>
+                        <td width="35%">Nama</td>
+                        <td><input type="text" name="nama" size="25" style="font-family: Arial, sans-serif;"></td>
+                    </tr>
+                    <tr>
+                        <td>Nim</td>
+                        <td><input type="text" name="nim" size="25" style="font-family: Arial, sans-serif;"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="text" name="email" size="25" style="font-family: Arial, sans-serif;"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td><input type="date" name="tgl_lahir" style="font-family: monospace;"></td>
+                    </tr>
+                    <tr>
+                        <td valign="top">Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" name="jenis_kelamin" value="L" style="accent-color: #007BFF;"> Laki-Laki <br>
+                            <input type="radio" name="jenis_kelamin" value="P" style="accent-color: #007BFF;"> Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">Pilih Program Kursus</td>
+                        <td>
+                            <input type="checkbox" name="kursus1" value="C#" style="accent-color: #007BFF;"> C# <br>
+                            <input type="checkbox" name="kursus2" value="Java" style="accent-color: #007BFF;"> Java <br>
+                            <input type="checkbox" name="kursus3" value="SQL" style="accent-color: #007BFF;"> SQL <br>
+                            <input type="checkbox" name="kursus4" value="HTML" style="accent-color: #007BFF;"> HTML dan PHP
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pilihan Hari/Jam Kursus</td>
+                        <td>
+                            <select name="jadwal" style="font-family: Arial, sans-serif;">
+                                <option value="1">Senin - Rabu/09.00 - 11.00</option>
+                                <option value="2">Kamis - Sabtu/08.00 - 10.00</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr bgcolor="#FA8072">
+            <td style="padding: 10px;">
+                <font color="#8B0000">Komentar Anda</font>
+                <br>
+                <textarea name="komentar" cols="65" rows="4" style="font-family: monospace, sans-serif;"></textarea>
+                <br><br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+                <input type="button" value="Cancel">
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
